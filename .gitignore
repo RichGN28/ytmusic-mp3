@@ -1,0 +1,31 @@
+# Entornos y archivos generados
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.coverage
+
+# Credenciales, sesiones y datos privados: nunca publicar
+.env
+.env.*
+!.env.example
+.auth*
+browser.json
+oauth.json
+auth.json
+session.json
+headers.txt
+headers_*.txt
+cookies.txt
+*.cookies.txt
+cookies/
+
+# Catálogos y contenido descargado
+biblioteca.json
+descargas/
+*.mp3
+*.m4a
+*.opus
+*.webm

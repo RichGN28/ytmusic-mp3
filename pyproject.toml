@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ytmusic-mp3"
+version = "1.0.0"
+description = "CLI para catalogar tus playlists de YouTube Music y descargar audio en MP3"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ricardo" }]
+dependencies = [
+  "ytmusicapi>=1.10,<2",
+  "yt-dlp>=2025.1.15",
+]
+
+[project.scripts]
+ytmusic-mp3 = "ytmusic_mp3.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ytmusic_mp3*"]
